@@ -24,8 +24,6 @@ cd ..
 # build workspace
 colcon build --symlink-install 
 
-cd ../..
-
 . install/setup.bash
 
 echo "MPPIC is ready to be tested now !!!"
