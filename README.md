@@ -19,3 +19,4 @@ ros2 launch neo_simulation2 simulation.launch.py
 ros2 launch neo_simulation2 navigation.launch.py
 ```
 
+You can find the all the MPPIC configs under MPPIC configuration folder. 
