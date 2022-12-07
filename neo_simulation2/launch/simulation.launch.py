@@ -57,4 +57,10 @@ def generate_launch_description():
             }.items()
         )
 
-    return LaunchDescription([spawn_entity, start_robot_state_publisher_cmd, teleop, gazebo])
+    rviz = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(get_package_share_directory('neo_nav2_bringup'), 'launch', 'rviz_launch.py')
+            )
+        )
+
+    return LaunchDescription([spawn_entity, start_robot_state_publisher_cmd, teleop, gazebo, rviz])

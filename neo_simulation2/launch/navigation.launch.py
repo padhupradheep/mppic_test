@@ -12,8 +12,8 @@ from launch_ros.actions import Node, PushRosNamespace
 from launch.conditions import IfCondition
 
 
-MY_NEO_ROBOT = os.environ['MY_ROBOT']
-MY_NEO_ENVIRONMENT = os.environ['MAP_NAME']
+MY_NEO_ROBOT = "mpo_700"
+MY_NEO_ENVIRONMENT = "neo_workshop"
 
 def generate_launch_description():
     use_multi_robots = LaunchConfiguration('use_multi_robots', default='False')
